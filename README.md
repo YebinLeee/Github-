@@ -1,4 +1,4 @@
-# Today I learned
+# 📚💻 Today I learned
 ## I-Am-Studying - ing - ing
 ---
 ### Computer Software Engineering 2021-1
@@ -204,6 +204,7 @@
 |string substr(int pos);<br>string substr(int pos, int n);	|문자열 서브스트링<br>pos 위치부터 n개 문자를 새로운 서브스트링으로 생성하여 반환|
 
 <br>
+
 ### <string 클래스 주요 연산자>
 <br>
 
