@@ -537,6 +537,19 @@ s []|s의 [] 인덱스에 있는 문자 반환 | char c=s[1]	| c='+'|
 
 <br>
 
+
+---
+
+### 04.23 - 04.26 
+
+|**목록**|**O/X**|**Today's**|**한줄평**|
+|--|--|--|--|
+|Seminar||04.26 Stack, sParseMatrix, transpose|stack study, PPT|
+|DataStructure Practice||원형/이중 연결 리스트 구현실습|book reference|
+|DataStructure||다항식배열|복습|
+|CPP||프렌드/연산자중복|예습|
+
+### 자료구조
 #### CH7 연결 리스트 2
 - [] 7.1 원형 연결 리스트
 - [ ] 7.2 원형 연결리스트의 사용
