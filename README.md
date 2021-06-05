@@ -627,77 +627,85 @@ s []|s의 [] 인덱스에 있는 문자 반환 | char c=s[1]	| c='+'|
 
 - [x] 4.1 제어 유니트 기능 <br>
 - [x] 4.2 제어 유니트 구조 <br>
-        - 명령어 해독기(Instruction Decoder) <br>
-                - 사상 (mapping) 방식 <br>
-        - 제어 주소 레지스터(CAR: Control Address Register) <br>
-        - 제어 기억장치(Control Memory) <br>
-        - 제어 버퍼 레지스터(CBR: Control Buffer Register) <br>
-        - 서브루틴 레지스터(SBR: Subroutine Register) <br>
-        - 순서 제어 모듈(Sequencing Module) <br>
+    - 명령어 해독기(Instruction Decoder) <br>
+        - 사상 (mapping) 방식 <br>
+            - 제어 주소 레지스터(CAR: Control Address Register) <br>
+            - 제어 기억장치(Control Memory) <br>
+            - 제어 버퍼 레지스터(CBR: Control Buffer Register) <br>
+            - 서브루틴 레지스터(SBR: Subroutine Register) <br>
+            - 순서 제어 모듈(Sequencing Module) <br>
 - [x] 4.3 마이크로 명령어 형식 <br>
-        - 연산 필드 1, 2 / 조건(CD) 필드 / 분기(BR) 필드 / 주소(AD) 필드 <br> 
+    - 연산 필드 1, 2 / 조건(CD) 필드 / 분기(BR) 필드 / 주소(AD) 필드 <br> 
 - [x] 4.4 마이크로프로그래밍 <br>
-        - 인출 사이클 루틴 <br>
-        - 간접 사이클 루틴 <br>
-        - 실행 사이클 루틴 <br>
-        - 사상 방식 이용 <br>
+    - 인출 사이클 루틴 <br>
+    - 간접 사이클 루틴 <br>
+    - 실행 사이클 루틴 <br>
+    - 사상 방식 이용 <br>
 - [x] 마이크로프로그램의 순서제어 <br>
-        - 순서 제어(Sequencing)  / MUX1, MUX2 <br>
-        - 주소 선택 회로 <br>
-        - 제어 신호의 생성 <br>
-                - 수직적 마이크로프로그래밍 (Vertical MicroProgramming) <br>
-                - 수평적 마이크로프로그래밍 (Horizontal MicroProgramming) <br>
+    - 순서 제어(Sequencing)  / MUX1, MUX2 <br>
+    - 주소 선택 회로 <br>
+    - 제어 신호의 생성 <br>
+        - 수직적 마이크로프로그래밍 (Vertical MicroProgramming) <br>
+        - 수평적 마이크로프로그래밍 (Horizontal MicroProgramming) <br>
 
 
 
 #### CH5. 기억장치
 - [x] 5.1 기억장치 분류와 특성 <br>
-        - 기억 장치 액세스 <br>
-                - 1. 순차적 액세스(sequential access) <br>
-                - 2. 직접 액세스(direct access) <br>
-                - 3. 임의 액세스(random access) <br>
-                - 4. 연관 액세스(associative access) <br>
-        - 기억장치 설계 <br>
-                - 용량/속도 <br>
-                - 전송 단위(unit of transfer) <br>
-                - 주소지정 단위(addressable unit) <br>
-        - 액세스 속도 파라미터 <br>
-                - 액세스 시간(access time) <br>
-                - 기억 장치 사이클 시간(memory cycle time) <br>
-                - 데이터 전송률(data transfer rate) <br>
-        - 기억 장치 제조 재료에 따른 유형 <br>
-                - 반도체 기억장치(semiconductor memory) <br>
-                - 자기-표면 기억장치(magnetic-surface memory) <br>
-        - 데이터를 저장하는 성질에 따른 유형 <br>
-                - 휘발성(volatile) / 비휘발성(nonvolatile) 메모리 <br>
+    - 기억 장치 액세스 <br>
+        - 1. 순차적 액세스(sequential access) <br>
+        - 2. 직접 액세스(direct access) <br>
+        - 3. 임의 액세스(random access) <br>
+            - 4. 연관 액세스(associative access) <br>
+    - 기억장치 설계 <br>
+       - 용량/속도 <br>
+        - 전송 단위(unit of transfer) <br>
+        - 주소지정 단위(addressable unit) <br>
+    - 액세스 속도 파라미터 <br>
+        - 액세스 시간(access time) <br>
+        - 기억 장치 사이클 시간(memory cycle time) <br>
+        - 데이터 전송률(data transfer rate) <br>
+    - 기억 장치 제조 재료에 따른 유형 <br>
+        - 반도체 기억장치(semiconductor memory) <br>
+        - 자기-표면 기억장치(magnetic-surface memory) <br>
+    - 데이터를 저장하는 성질에 따른 유형 <br>
+        - 휘발성(volatile) / 비휘발성(nonvolatile) 메모리 <br>
 - [x] 5.2 계층적 기억장치시스템 <br>
-        - 내부 기억 장치 / 외부 기억 장치 <br>
-        - 캐시 메모리 / 디스크 캐시 <br>
+    - 내부 기억 장치 / 외부 기억 장치 <br>
+    - 캐시 메모리 / 디스크 캐시 <br>
 - [x] 5.3 반도체 기억장치 <br>
-        - RAM(Random Access Memory) - DRAM, SDRAM <br>
-        - ROM(Read Only Memory) - PROM< EPROM< EEPROM, flash memory <br>
+    - RAM(Random Access Memory) - DRAM, SDRAM <br>
+    - ROM(Read Only Memory) - PROM< EPROM< EEPROM, flash memory <br>
 - [x] 5.4 기억장치 모듈 설계 <br>
-        - 병렬 접속 <br>
-        - 직렬 접속 <br>
-        - 기억장치 모듈의 설계 순서 <br>
-                - 기억 장치 주소 표(memory address map) <br>
+    - 병렬 접속 <br>
+    - 직렬 접속 <br>
+    - 기억장치 모듈의 설계 순서 <br>
+        - 기억 장치 주소 표(memory address map) <br>
 - [x] 5.5 캐시 메모리 <br>
     - [x] 5.5.1 캐시 용량 <br>
     - [x] 5.5.2 인출 방식 <br>
-                - 요구 인출(demand fetch) 방식 <br>
-                - 선인출(prefetch) 방식 <br>
-    - [ ] 5.5.3 사상 방식 <br>
+        - 요구 인출(demand fetch) 방식 <br>
+        - 선인출(prefetch) 방식 <br>
+    - [x] 5.5.3 사상 방식 <br>
+        - 1. 직접 사상(Direct Mapping)
+        - 2. 완전-연관 사상(Fully-Associative Mapping)
+        - 3. 세트-연관 사상(Set-Associative Maaping)
     - [ ] 5.5.4 교체 알고리즘
-    - [ ] 5.5.5 쓰기 정책
-    - [ ] 5.5.6 다중 캐시
-- [ ] 5.6 DDR SDRAM
-    - [ ] 5.6.1 SDRAM
-    - [ ] 5.6.2 DDR SDRAM
+    - [x] 5.5.5 쓰기 정책
+        - 1. Write-Trhough
+        - 2. Write-Back
+    - [x] 5.5.6 다중 캐시
+        - 온-칩 캐시(On-Chip Cahce)
+        - 1. 계층척 캐시(Hierarchial Cache)
+        - 2. 분리 캐시(Split Cache)
+- [x] 5.6 DDR SDRAM
+    - [x] 5.6.1 SDRAM
+    - [x] 5.6.2 DDR SDRAM
     - [ ] 5.6.3 기억장치 랭크
-- [ ] 5.7 차세대 비휘발성 기억장치
-    - [ ] 5.7.1 PRAM
-    - [ ] 5.7.2 FRAM
-    - [ ] 5.7.3 MRAM
+- [x] 5.7 차세대 비휘발성 기억장치
+    - [x] 5.7.1 PRAM
+    - [x] 5.7.2 FRAM
+    - [x] 5.7.3 MRAM
 
 
 <br>
@@ -810,48 +818,57 @@ s []|s의 [] 인덱스에 있는 문자 반환 | char c=s[1]	| c='+'|
 ### 컴퓨터 아키텍쳐
 
 #### CHAPTER 06 보조저장장치
-- [ ] 6.1 하드 디스크
-   - [ ] 6.1.1 디스크의 구조 <br>
-   - [ ] 6.1.2 디스크 액세스 시간
-- [ ] 6.2 RAID
-     - [ ] 6.2.1 RAID 출현의 배경
-     - [ ] 6.2.2 RAID의 종류
-- [ ] 6.3 플래시 메모리와 SSD
-     - [ ] 6.3.1 플래시 메모리
-     - [ ] 6.3.2 SSD
+- [x] 6.1 하드 디스크
+   - [x] 6.1.1 디스크의 구조 <br>
+       - 구성 요소 : 원형 평판 / 헤드 / 디스크 팔 / 구동장치
+       - 단일-헤드 / 다중-헤드
+       - 이동-헤드 / 고정-헤드
+       - 구조 : 섹터 / 섹터간갭  트랙간갭
+       - 등각 속도 방식(CAV: Constant Angular Velocity) / 다중 영영 기록 방식(MZR: Multiple Zone Recording)
+       - 디스크 형식화 작업(Disk Formatting)
+       - 디스크 드라이브(Disk Drive)
+           - 양면 / 단면 디스크
+           - 실린더(Cylinder)
+           - 단일-평판 / 다중-평판 디스크 드라이브
+   - [x] 6.1.2 디스크 액세스 시간
+       - 탐색 시간(Seek Time) / 회전 지연 시간(Rotational Latency Time) / 데이터 전송 시간(Data Transfer Time)
+- [x] 6.2 RAID
+     - [x] 6.2.1 RAID 출현의 배경
+     - [x] 6.2.2 RAID의 종류
+         - 기본 기술 : 디스크 인터리빙 (Disk-Interleaving) / 라운드-로빈 방식(Round-Robin)
+         - RAID-1 : 디스크 미러링(Disk Mirroring) 방식
+         - RAID-2 : 비트-단위 인터리빙 방식 / 해밍 코드(Hamming Code)
+         - RAID-3 : 패리티 방식 / 팰티 비트
+         - RAID-4 : 블록-단위 인터리빙 방식
+         - RAID-5 : 패리티 블록의 라운드-로빈 방식으로의 분산 저장 방식
+- [x] 6.3 플래시 메모리와 SSD
+     - [x] 6.3.1 플래시 메모리
+     - [x] 6.3.2 SSD
+         - 마모 평준화(Wear Leaving)
+         - 쓰레기 수집(Garbage Collection)
+         - 초과 대비 공간(over-Provisioning)
+     - 광 저장 장치 - CD-ROM : 등선 속도(CLV: Constant Linear Velocity)
 <br>
 
 #### CH 07 시스템 버스, I/O 밑 인터럽트
-- [ ] 7.1 시스템 버스
-   - [ ] 7.1.1 시스템 버스 조직
-   - [ ] 7.1.2 시스템 버스 기본 동작
-- [ ] 7.2 버스 중재
-   - [ ] 7.2.1 병렬 중재 방식
-   - [ ] 7.2.2 직렬 중재 방식
-   - [ ] 7.2.3 폴링 방식
-- [ ] 7.3 IO 장치 접속
-   - [ ] 7.3.1 IO 제어
-   - [ ] 7.3.2 IO 주소 지정
-- [ ] 7.4 인터럽트 이용 IO
-   - [ ] 7.4.1 다중 인터럽트 방식
-   - [ ] 7.4.2 데이지-체인 방식
-   - [ ] 7.4.3 소프트웨어 폴링 방식
-- [ ] 7.5 DMA 이용 IO 
+- [x] 7.1 시스템 버스
+   - [x] 7.1.1 시스템 버스 조직
+   - [x] 7.1.2 시스템 버스 기본 동작
+- [x] 7.2 버스 중재
+   - [x] 7.2.1 병렬 중재 방식
+   - [x] 7.2.2 직렬 중재 방식
+   - [x] 7.2.3 폴링 방식
+- [x] 7.3 IO 장치 접속
+   - [x] 7.3.1 IO 제어
+   - [x] 7.3.2 IO 주소 지정
+- [x] 7.4 인터럽트 이용 IO
+   - [x] 7.4.1 다중 인터럽트 방식
+   - [x] 7.4.2 데이지-체인 방식
+   - [x] 7.4.3 소프트웨어 폴링 방식
+- [x] 7.5 DMA 이용 IO 
+
 <br>
 
-#### CH 08 고성능 컴퓨터시스템 구조
-- [ ] 8.1 병렬처리의 개념 및 필요성
-- [ ] 8.2 병렬처리의 단위
-- [ ] 8.3 병렬컴퓨터의 분류
-   - [ ] 8.3.1 Flynn 분류
-   - [ ] 8.3.3 시스템 구성 방법에 따른 분류
-- [ ] 8.4 다중 프로세서 시스템 구조
-   - [ ] 8.4.1 공유-기억장치 시스템 구조
-   - [ ] 8.4.2 분산-기억장치 시스템 구조
-   - [ ] 8.4.3 캐시 일관성 유지 프로토콜
-- [ ] 8.5 그래픽처리유니트(GPU)
-   - [ ] 8.5.1 CUDA 프로그래밍 모델
-   - [ ] 8.5.2 GPU 내부 구조
 
 
 ### 이산 수학
