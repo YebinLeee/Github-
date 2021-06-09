@@ -569,10 +569,19 @@ s []|s의 [] 인덱스에 있는 문자 반환 | char c=s[1]	| c='+'|
 ### CPP
 
 #### CH7 프렌드와 연산자 중복
-- [x] 7.1 C++ 프렌드 개념
-- [x] 7.2 연산자 중복
+
+- [x] 7.1 C++ 프렌드 개념 <br>
+    - 프렌드 함수, friend 키워드
+    - 전방 참조, 전방 선언
+- [x] 7.2 연산자 중복 (Operatior Overloading)
+    - 연산자 함수 (Operator Function)
+    - operator 키워드
 - [x] 7.3 이항 연산자 중복
+    - +, - ==, +=, -=
+    - 참조 리턴, *this 리턴
 - [x] 7.4 단항 연산자 중복
+    - ++, -- ! 
+    - 전위/후위 연산자
 - [x] 7.5 프렌드를 이용한 연산자 중복
 - [x] 7.6 참조를 리턴하는 << 연산자 실습
 
@@ -736,22 +745,39 @@ s []|s의 [] 인덱스에 있는 문자 반환 | char c=s[1]	| c='+'|
 
 ### CPP
 
-#### CH8. 상속
+#### CH8. 상속 (Inheritance)
+
 - [x] 8.1 상속의 개념
+    - 상속 / 기본 클래스 (base class) - 파생 클래스 (derived class)
 - [x] 8.2 클래스 상속과 객체
+    - 상속 접근 지정
+    - 파생 클래스 객체
 - [x] 8.3 상속과 객체 포인터
+    - 업캐스팅(up-casting) / 다운캐스팅(down-casting)과 명시적 형변환
 - [x] 8.4 protected 접근 지정
 - [x] 8.5 상속과 생성자, 소멸자
+    -  묵시적인 기본 생성자선택, 명시적 생성자 선택, 
 - [x] 8.6 상속의 종류 : public, protected, private 상속
-- [x] 8.7 다중 상속
-- [x] 8.8 가상 상속
+- [x] 8.7 다중 상속 (Multiple Inhertiance)
+- [x] 8.8 가상 상속 (Virtual Inheritance)
+    - 가상 기본 클래스 (virtual base class)
 
-   
-#### CH9. 가상 함수와 추상 클래스
-- [x] 9.1 상속 관계에서의 함수 재정의
-- [x] 9.2 가상 함수와 오버라이딩
+<br>
+
+#### CH9. 가상 함수와 추상 클래스 (Virtual Function / Abstract Class)
+
+- [x] 9.1 상속 관계에서의 함수 재정의 (Function Redefine)
+- [x] 9.2 가상 함수와 오버라이딩 (Virtual Function Overriding)
+    - 함수 오버라이딩 - 실행 시간 다형성(run time polymorphism)
+    - 가상 함수 (virtual function) 
+    - 동적 바인딩(Dynamic Binding)
+    - override, final 지시어
+    - 범위 지정 연산자(::)
+    - 가상 소멸자
 - [x] 9.3 가상 함수와 오버라이딩의 활용 사례
-- [x] 9.4 추상 클래스
+- [x] 9.4 추상 클래스 (abstract class)
+    - 순수 가상 함수 (pure virtual function)
+    
 <br>
 
 
@@ -775,31 +801,76 @@ s []|s의 [] 인덱스에 있는 문자 반환 | char c=s[1]	| c='+'|
 ### CPP
 
 #### CH10. 템플릿과 표준 템플릿 라이브러리(STL)
-- [x] 10.1 일반화와 템플릿
+
+- [x] 10.1 일반화와 템플릿 (Template)
+    - 템플릿 함수 (template function) , 제네릭 함수 (generic function)
+    - 제네릭 타입
+    - 템플릿으로부터의 구체화(specialization)
 - [x] 10.2 다양한 제네릭 함수 만들기
-- [x] 10.3 제네릭 클래스 만들기
-- [x] 10.4 C++ 표준 템플릿 라이브러리(STL)와 활용
+- [x] 10.3 제네릭 클래스 만들기 (Generic Class)
+    - 제네릭 클래스 객체 <specialized type>
+- [x] 10.4 C++ 표준 템플릿 라이브러리(STL)와 활용 (Standard Template Library)
+    - STL 컨테이너 - 템플릿 클래스 
+        - 1. 순차 컨테이너 - vector, dequeue, list
+        - 2. 컨테이너 어댑터 - stack, queue
+        - 3. 연관 컨테이너 - set, map
+    - STL iterator 포인터 
+    - STL 알고리즘 함수
 - [x] 10.5 auto와 람다식
+        
 <br>
 
 #### CH11. C++ 입출력 시스템
+        
 - [x] 11.1 C++ 입출력 기초
+    - 스트림(stream) - 표준 입력/출력/오류 출력 스트림 객체
+    - 버퍼(buffer) - 입력/스트림 버퍼
+    - C++ 입출력 라이브러리 - 템플릿을 통한 일반화
 - [x] 11.2 ostream의 멤버 함수 이용 문자 출력
+    - << 연산자, cout 스트림 객체
+    - put, write, flush
 - [x] 11.3 istream 멤버 함수 이용 문자 입력
+    - >> 연산자, cin 입력 스트림 객체
+    - get, getline, ignore, gcount
 - [x] 11.4 포맷 입출력
+    - 포맷 플래그 (format flag)
+        - ios::left, ios::right / ios::dec, oct, hex  ios::boolalpha
+        - setf(), unsetf()
+    - 포맷 함수(format function)
+        - width, fill, precision
+    - 조작자(manipulator)
+        - endl, oct,dec,hex, left, right, skipws, noskipws, boolalpha
+        - setfill, setprecision, setw
 - [x] 11.5 삽입 연산자<< 추출 연산자>>
 - [x] 11.6 사용자 조작자 만들기
+        
 <br>
 
 #### CH12. C++ 파일 입출력
+        
 - [x] 12.1 텍스트 파일, 바이너리 파일
+    - 텍스트 파일  문자: 아스키/유니코드 - '\r'. '\n'
 - [x] 12.2 파일 입출력 개요
+    - ifstream, ofstream, fstream
+    - 파일 입출력 모드
 - [x] 12.3 <<, >> 연산자를 이용한 텍스트 파일 입출력
-- [x] 12.4 파일 모드
+    - 파일 입출력 스트림 객체, 열기/검사 객체.open() (!객체), 입출력, 닫기 객체.open()
+- [x] 12.4 파일 모드 (file mode)
+    - ios::in, out, ate, app, binary
+    - | 연산
 - [x] 12.5 멤버 함수 이용한 텍스트 IO
+    - get()과 EOF
+    - put()
+    - getline()
 - [x] 12.6 바이너리 IO
-- [x] 12.7 스트림 상태 검사
-- [x] 12.8 임의 접근
+    - read(), write() 블록 단위, gcount()
+- [x] 12.7 스트림 상태 검사 (stream state check
+    - eofbit, failbit, badbit
+    - eof(), fail(), bad(), good(), clear()
+- [x] 12.8 임의 접근 (random file access)
+    - 파일 포인터 (file pointer)
+    - seekg, seekp, tellg, tellp
+    - ios::beg, cur, end
 <br>
 
 #### CH13. 예외 처리와 C 언어와의 링크 지정
