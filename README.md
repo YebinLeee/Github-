@@ -949,12 +949,29 @@ s []|s의 [] 인덱스에 있는 문자 반환 | char c=s[1]	| c='+'|
 - [x] 4.2 관계와 관계 표현
 - [x] 4.3 경로
 - [x] 4.4 관계의 성질
-- [ ] 4.5 역관계와 합성 관계
-- [ ] 4.6 연결 관계와 와샬 알고리즘
+    - 동치 관계(equivalence relation)
+- [x] 4.5 역관계와 합성 관계
+    - 역관계(inverse relation) 
+    - 여 관계 (complementary relation)
+    - 관계 행렬을 이용한 여러 관계의 성질(AND연산, OR연산, 전치-여관계, 여행렬)
+    - 합성 관계(composite relation) - 교환법칙 성립x, 결합법칙 성립 o
+    - 합성 관계의 부울곱 표현(결합)
+    - 합성 관계의 결합 법칙
+    - 합성 관계에 대한 역 관계
+- [x] 4.6 연결 관계와 와샬 알고리즘
+    - 닫힘 (closure) : 반사/대칭/추이 닫힘
+    - 연결 관계 -> 추이 닫힘 ( 1) 유항 그래프   2) 관계 행렬)
+    - 와샬 알고리즘(warshlall algorithm)
+    - 가장 작은 동치 관계
 <br>
 
 #### CH6 부분 순서 관계와 부울 대수
-- [ ] 6.1 부분 순서 관계
+- [x] 6.1 부분 순서 관계
+    - 부분 순서 관계(partially ordered relation) - 반사, 반대칭, 추이 관계 
+    - 전순서 관계(rortally ordered relation) - 모든 원소의 비교 가능(totally comparable)
+    - 곱 부분 순서 관계(product partial ordered relation)
+    - 사전식 순서(lexicographic order)
+    - 위상 정렬(topological sorting) 
 - [ ] 6.2 부분 순서 집합의 상한과 하한
 - [ ] 6.3 격자
 - [ ] 6.4 특별한 형태의 격자
